@@ -60,3 +60,9 @@ button:hover {
 .error{
     color:red;
 }
+h1{
+    text-transform: capitalize;
+    color:aqua;
+    text-align: center;
+
+}
