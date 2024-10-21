@@ -1,0 +1,59 @@
+<div id="parent">
+
+    <div id="top">
+
+        <div id="child1">
+            <input type="text" placeholder="search" [(ngModel)]="term" (keyup)="search()">
+            <button (click)="freeDel()"> Only free delivery </button><br>
+            <button (click)="pricelh()"> price low to high </button>
+            <button (click)="pricehl()"> price high to low </button>
+            <button (click)="ratinglh()"> rating low to high </button>
+            <button (click)="ratinghl()"> rating high to low </button><br>
+            <button (click)="discount()"> Apply 50% discount </button>
+            <button (click)="addDeliveryCharges()"> price with delivery charges </button><br>
+            <button (click)="totalPrice()"> Total price </button>
+            <button (click)="cartSize()"> Total cart items  </button> <mark>{{cs}}</mark>
+        </div>
+
+        <div id="child2">
+            <label> Name : </label>
+            <input type="text" [(ngModel)]="productName"><br>
+            <label> Price : </label>
+            <input type="number" [(ngModel)]="price"><br>
+            <label> Rating : </label>
+            <input type="number" [(ngModel)]="rating"><br>
+            <label> Free Delivery </label>
+            <input type="radio" name="same" value="true" [(ngModel)]="freeDelivery">
+            <label> Yes</label>
+            <input type="radio" name="same" value="false" [(ngModel)]="freeDelivery">
+            <label> No </label><br>
+            <button (click)="submit()">Add to cart</button>
+        </div>
+
+    </div>
+
+    <div id="bottom">
+        <table>
+            <thead>
+                <tr>
+                    <th> S.NO </th>
+                    <th> Product Name </th>
+                    <th> Price </th>
+                    <th> Rating </th>
+                    <th> Free Delivery </th>
+                    <th> Actions </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let product of products; let i=index;">
+                    <td>{{i+1}}</td>
+                    <td>{{product.productName}}</td>
+                    <td>{{product.price}}</td>
+                    <td>{{product.rating}}</td>
+                    <td>{{product.freeDelivery}}</td>
+                    <td><button (click)="delete(i)">delete</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

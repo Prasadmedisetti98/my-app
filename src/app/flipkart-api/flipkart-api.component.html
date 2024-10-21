@@ -1,0 +1,9 @@
+<div class="parent">
+    <div class="child" *ngFor="let detail of details">
+        <img src="{{detail.image}}" alt="" width="80%" height="50%"> <br>
+        <strong><mark class="mark">{{detail.rating.rate}}</mark></strong>
+        <h1 class="category">{{detail.category}}</h1>
+        <p>{{detail.title}}</p>
+        <h3>Rs {{detail.price}}</h3>
+    </div>
+</div>

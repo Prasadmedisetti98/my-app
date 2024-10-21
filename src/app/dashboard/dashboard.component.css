@@ -1,0 +1,48 @@
+.parent{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(204, 146, 219);
+}
+.child1{
+    height: 100%;
+    width: 20%;
+    background-color:lightseagreen;
+    overflow: auto;
+
+
+}
+.child2{
+    height: 100%;
+    width: 80%;
+    overflow: auto;
+    }
+h1{
+    margin-left: 30px;
+    padding: 10px;
+}
+pre{
+    text-align: center;
+    font-size: xx-large;
+    color: black;
+    font-weight: bolder;
+    text-shadow: 2px 2xp 2px blanchedalmond;
+    margin-top: 250px;
+    text-transform: uppercase;
+}
+h2{
+    text-transform: capitalize;
+    margin-left: 30px;
+    padding: 10px;
+}
+button{
+    padding: 15px;
+    border-radius: 10px;
+    background-color:darkorchid;
+    font-weight: bolder;
+    margin-left:180px;
+    margin-top: -20px;
+    text-transform:uppercase;
+}

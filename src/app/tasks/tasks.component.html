@@ -1,0 +1,40 @@
+<h1>Event Registration</h1>
+<label for="">Name:</label>
+<input type="text" [(ngModel)]="name">
+<button (click)="submit()">submit</button>
+
+<h1>Registered users</h1>
+<ol>
+    <li *ngFor="let name of names">{{name}}</li>
+</ol>
+
+<button (click)="delete()">delete</button>
+
+<hr><hr>
+
+<h1>Student Registration</h1>
+<label for="">Name:</label>
+<input type="text" [(ngModel)]="studentName">
+<label for="">Age:</label>
+<input type="number"[(ngModel)]="studentAge">
+<button (click)="create()">create</button>
+<button (click)="remove()">delete</button>
+
+
+<h1>Total Students</h1>
+
+<table border="1">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let student of students">
+            <td>{{student.name}}</td>
+            <td>{{student.age}}</td>
+        </tr>
+    </tbody>
+</table>
+

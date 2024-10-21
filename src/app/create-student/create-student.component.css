@@ -1,0 +1,83 @@
+form {
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+form label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+    color: #333;
+}
+
+form input[type="text"],
+form input[type="number"],
+form input[type="mail"],
+form input[type="date"],
+form input[type="radio"] {
+    width: calc(100% - 20px);
+    padding: 8px 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+form input[type="radio"] {
+    width: auto;
+    margin-right: 5px;
+}
+
+form button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
+form h2 {
+    color: #4CAF50;
+    margin-top: 15px;
+    font-size: 18px;
+}
+
+form .form-group {
+    margin-bottom: 15px;
+}
+
+form div[formGroupName],
+form div[formArrayName] {
+    background-color: #f1f1f1;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+form .form-group button {
+    background-color: #f44336;
+    margin-top: 0;
+}
+
+form .form-group button:hover {
+    background-color: #e53935;
+}
+
+.error{
+    color: red;
+}

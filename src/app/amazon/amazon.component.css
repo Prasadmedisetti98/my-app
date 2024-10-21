@@ -1,0 +1,95 @@
+#parent {
+    margin: 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+#top, #bottom {
+    flex-basis: 48%;
+    display: flex;
+    justify-content: space-between;
+}
+#child1, #child2 {
+    background-color: #f8f9fa;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    text-align: left;
+    background-color: aquamarine;
+}
+button {
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    border: none;
+    margin-left: 5px;
+}
+label {
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Inputs and Buttons */
+input[type="text"], input[type="number"], input[type="radio"], button {
+    margin-bottom: 12px;
+    padding: 8px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+input[type="text"]:focus, input[type="number"]:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button:focus {
+    outline: none;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+}
+
+mark {
+    background-color: #ffc107;
+    color: black;
+    padding: 8px 9px;
+    border-radius: 3px;
+    margin-left: 8px;
+}
+
+table th, table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background-color: #343a40;
+    color: white;
+}
+
+table tbody tr:hover {
+    background-color: #f1f3f5;
+}
+
+table tbody tr td button {
+    background-color: #dc3545;
+}
+
+table tbody tr td button:hover {
+    background-color: #c82333;
+}
+
+

@@ -1,0 +1,70 @@
+<div class="parent">
+
+    <div class="child1">
+
+        <input type="text" placeholder="Search Student" (keyup)="search()" [(ngModel)]="term">&nbsp;
+
+        <label>Column :</label>
+      <select [(ngModel)]="column">
+        <option value="name">Name</option>
+        <option value="phone">Phone</option>
+        <option value="city">City</option>
+        <option value="dob">Date of Birth</option>
+        <option value="email">Email</option>
+      </select>&nbsp;
+        <label>Order :</label>
+        <select [(ngModel)]="order">
+            <option value="asc">Ascending</option>
+            <option value="desc">Descending</option>
+        </select> &nbsp;
+
+        <button (click)="sort()">Sort</button>&nbsp;
+
+        <input type="number" [(ngModel)]="limit" placeholder="limit">&nbsp;
+        <input type="number" [(ngModel)]="page" placeholder="Page">
+        &nbsp;&nbsp;&nbsp;
+        <button (click)="pagination()">Page</button>
+    </div>
+
+    <div class="child2">
+
+        <div class="card" *ngFor="let student of students">
+
+            <div class="top">
+                <div class="t1">
+                    <img src="{{student.profile_picture}}" width="80px">
+                </div>
+                <div class="t2">
+                    <p>{{student.school_name}}</p>
+                </div>
+            </div>
+
+            <div class="middle">
+                <div class="m1">
+                    <label>Name :{{student.name}}</label> <br>
+                    <label>Phone :{{student.phone}}</label> <br>
+                    <label>City :{{student.city}}</label> <br>
+                    <label>Dob :{{student.dob}}</label> <br>
+                    <label>Email :{{student.email}}</label>
+                </div>
+                <div class="m2">
+                    <img src="{{student.profile_picture}}" alt="" width="80px">
+                </div>
+            </div>
+
+            <div class="bottom">
+                <div class="b1">
+                    <span>School City : {{student.city}}</span>
+                    <span>Scool Pin :{{student.school_pin}}</span>
+                </div>
+                <div class="b2">
+                    <button class="view">view</button>
+                    <button class="edit">edit</button>
+                    <button (click)="delete(student.id)" class="delete">delete</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+

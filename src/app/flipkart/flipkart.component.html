@@ -1,0 +1,58 @@
+<div>
+
+<h1>Welcome to Flipkart</h1>
+
+<label for="">Name:</label>
+<input type="text" [(ngModel)] = "productName">
+<br>
+
+<label for="">Price:</label>
+<input type="number" [(ngModel)] ="price">
+<br>
+
+<label for="">Rating:</label>
+<input type="number" [(ngModel)] = "rating">
+<br>
+
+<label for="">Delivery Date:</label>
+<input type="date" [(ngModel)] ="deliveryDate">
+<br>
+
+<label for="">Free Delivery:</label>
+<label for="">Yes</label>
+<input type="radio" name="fd" value="true" [(ngModel)] ="freeDelivery">
+<label for="">No</label>
+<input type="radio" name="fd" value="false" [(ngModel)] ="freeDelivery">
+<br>
+
+<button (click)="submit()">submit</button>
+
+<h1>List Of Products</h1>
+
+<table border="1">
+    <thead>
+       <tr>
+        <th>S.NO</th>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Rating</th>
+        <th>Delivery Date</th>
+        <th>Free Delivery</th>
+        <th>Action</th>
+       </tr>
+    </thead>
+    
+    <tbody>
+        <tr *ngFor=" let product of products; let i=index">
+            <td>{{i+1}}</td>
+            <td>{{product.name}}</td>
+            <td>{{product.price}}</td>
+            <td>{{product.rating}}</td>
+            <td>{{product.deliveryDate | date:'yyyy-MMM-dd'}}</td>
+            <td>{{product.freeDelivery}}</td>
+            <td><button (click)="delete(i)">delete</button></td>
+        </tr>
+    </tbody>
+</table>
+</div>
+

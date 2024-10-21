@@ -1,0 +1,66 @@
+/* Table Styles */
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #2d2d2d; /* Dark background for the table */
+    color: #f0f0f0; /* Light text color */
+    border: 3px solid #8be9fd; /* Bright cyan border */
+    box-shadow: 0px 0px 20px rgba(139, 233, 253, 0.7); /* Cyan glow effect */
+    border-radius: 12px; /* Rounded corners */
+    overflow: hidden; /* Ensures rounded corners are visible */
+    transition: all 0.3s ease; /* Smooth transition */
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #444; /* Inner border for table cells */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth color transition */
+}
+
+th {
+    background-color: #ff79c6; /* Bright pink for the header */
+    color: #1e1e1e; /* Dark text for contrast */
+    font-weight: bold; /* Bold text */
+    text-transform: uppercase; /* Uppercase text */
+    box-shadow: inset 0px 4px 6px rgba(0, 0, 0, 0.3); /* Subtle shadow inside the header */
+}
+
+tbody tr:nth-child(even) {
+    background-color: #44475a; /* Slightly lighter for alternating rows */
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #3c3c3c; /* Slightly darker for odd rows */
+}
+
+tbody tr:hover {
+    background-color: #50fa7b; /* Bright green row on hover */
+    color: #1e1e1e; /* Dark text on hover */
+}
+
+td {
+    background-color: #282a36; /* Dark background for table cells */
+}
+
+td:hover {
+    background-color: #bd93f9; /* Light purple on cell hover */
+    color: #fff; /* White text on hover */
+}
+
+/* Adding hover effects for the entire table */
+table:hover {
+    border-color: #ffb86c; /* Change border to bright orange on hover */
+    box-shadow: 0px 0px 25px rgba(255, 184, 108, 0.8); /* Orange glow on hover */
+}
+
+
+.green{
+    background-color: green;
+    color: purple;
+}
+.red{
+    background-color: red;
+    color: purple;
+}

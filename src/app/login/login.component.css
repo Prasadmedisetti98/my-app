@@ -1,0 +1,51 @@
+.parent{
+    background-color: aqua;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form{
+    background-color:darksalmon;
+    width: 35%;
+    height: 55%;
+    padding: 20px;
+    text-align: center;
+    border-radius: 25px;
+}
+
+button{
+   padding: 10px;
+   border-radius: 10px;
+   background-color:green;
+   color: white;
+   margin-top: 20px;
+   width: 20%;
+   font-weight: bolder;
+   text-transform: uppercase;
+   cursor: pointer;
+}
+button:hover{
+    background-color:darkmagenta;
+}
+input{
+    width: 50%;
+    border-radius: 10px;
+    margin-top: 15px;
+    padding: 20px;
+    margin-left: 42px;
+    border: 2px solid purple;
+
+}
+#one{
+    margin-left: 36px;
+    margin-top: 10px;
+}
+#two{
+    margin-left: 20px;
+    margin-top: 20px;
+}
+label{
+    font-weight: 900; 
+}
